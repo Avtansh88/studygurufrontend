@@ -1,0 +1,129 @@
+.lecture-page {
+  display: flex;
+  justify-content: space-between;
+  min-height: 80vh;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left {
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    video {
+      width: 100%;
+      max-width: 720px;
+      aspect-ratio: 16 / 9;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      margin-bottom: 20px;
+    }
+
+    h1, h3 {
+      color: #8a4baf;
+      text-align: center;
+      margin: 10px 0;
+    }
+
+    @media (max-width: 768px) {
+      width: 90%;
+    }
+  }
+
+  .right {
+    width: 30%;
+    padding: 10px;
+
+    @media (max-width: 768px) {
+      width: 80%;
+      margin-bottom: 20px;
+    }
+
+    .lecture-form {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      margin-bottom: 20px;
+
+      h2 {
+        font-size: 24px;
+        color: #8a4baf;
+        margin-bottom: 15px;
+      }
+
+      form {
+        text-align: left;
+
+        label {
+          display: block;
+          margin-bottom: 5px;
+          font-size: 14px;
+          color: #333;
+        }
+
+        input {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 15px;
+          border: 1px solid black;
+          border-radius: 5px;
+        }
+
+        button {
+          width: 100%;
+          padding: 10px;
+          background-color: #8a4baf;
+          color: white;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+      }
+    }
+
+    .lecture-number {
+      border: 1px solid black;
+      padding: 10px;
+      margin-top: 10px;
+      border-radius: 5px;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        background-color: #8a4baf;
+        color: white;
+        transform: translateY(-2px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .active {
+      background-color: #8a4baf;
+      color: white;
+    }
+
+    button.common-btn {
+      margin-top: 10px;
+      background-color: #8a4baf;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #703b90;
+      }
+    }
+  }
+}

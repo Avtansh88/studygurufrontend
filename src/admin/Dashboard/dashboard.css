@@ -1,0 +1,26 @@
+.main-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 20px;
+
+  .box {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    color: #ffffff;
+    min-width: 200px;
+    flex: 1 1 250px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background: linear-gradient(135deg, #432456, #1e1f5c);
+      transform: translateY(-5px);
+      box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+    }
+  }
+}
